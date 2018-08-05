@@ -89,15 +89,11 @@ void display(){
 }
 
 void swap_alternate(){
-    printf("inside\n");
     struct node* prev;
     struct node* first = start;
     struct node* second = start->next;
     start=NULL;
     while(first->next!=NULL){
-        printf("%d\n",first->val);
-        printf("%d\n",second->val);
-
         struct node* temp;
         first->next=second->next;
         second->next=first;
