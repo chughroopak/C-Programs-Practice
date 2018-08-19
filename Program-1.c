@@ -17,12 +17,6 @@ void sortStrings(char arr[][MAX], int n)
     {
         for (int i=j+1; i<n; i++)
         {
-            // if (strcmp(arr[j], arr[i]) > 0)
-            // {
-            //     strcpy(temp, arr[j]);
-            //     strcpy(arr[j], arr[i]);
-            //     strcpy(arr[i], temp);
-            // }
             if (strlen(arr[j])>strlen(arr[i]))
             {
                 strcpy(temp, arr[j]);
